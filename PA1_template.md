@@ -12,22 +12,6 @@ First you need to load the data , We'll use dplyr package
 
 ```r
 library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-## 
-## The following object is masked from 'package:stats':
-## 
-##     filter
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 activity <- read.csv(file="activity.csv", header=TRUE,sep=",",stringsAsFactors=FALSE)
 activity <-tbl_df(activity)
 ```
